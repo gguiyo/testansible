@@ -2,7 +2,6 @@
 - hosts: all
   become: yes
   tasks:
-    - name: Update apt cache and make sure Vim is installed
+    - name: install nginx
       apt:
-        name: vim
-        update_cache: yes
+        name: nginx
